@@ -10,6 +10,7 @@ for (let i = 0; i<menuTrigger.length; i++) {
         overlay.classList.remove('active');
     }
 
+    
     menuTrigger[i].addEventListener('click',function(){
         mobileMenu[i].classList.add('active');
         overlay.classList.add('active');
@@ -17,6 +18,7 @@ for (let i = 0; i<menuTrigger.length; i++) {
     closeTrigger[i].addEventListener('click', closeMenu);
     overlay.addEventListener('click', closeMenu);
 }
+
 
 const submenu = document.querySelectorAll('.sub-trigger');
    submenu.forEach((menu) => menu.addEventListener('click',toggle));
